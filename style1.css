@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background: #f8f9fa;
+    color: #333;
+}
+/*Navbar*/
+
+header{
+    width: 100%;
+    background: #0d6efd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar{
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo img{
+    width: 90px;
+    height: 90px;
+    margin-right: 15px;
+}
+.logo h2{
+    color: #fff;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+.nav-links a:hover{
+    color: #ffd43b;
+}
+
+/* Hero Section */
+
+.hero{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(rgba(13,110,253,.8),rgba(13,110,253,.8)),url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content{
+    max-width: 700px;
+    color: white;
+}
+.hero h1{
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+.btn{
+    background: #ffd43b;
+    color: #000;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+/*Section */
+
+section{
+    padding: 80px 10%;
+}
+
+section h2{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0d6efd;
+}
+
+/* About */
+.about p{
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* Notes */
+
+.card-container{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+gap: 25px;
+}
+
+.card h3{
+    color: #0d6efd;
+    margin-bottom: 10px;
+}
+.card p{
+    margin-bottom: 20px;
+}
+.card button{
+    background: #0d6efd;
+    color: white;
+    border:none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/*Tips*/
+
+.tips-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+}
+.tip-box{
+    background: #0d6efd;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Contact */
+form{
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input,textarea{
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+form button{
+    background: #0d6efd;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* Footer*/
+footer{
+    background: #0d6efd;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.card{
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+html{
+    scroll-behavior: smooth;
+}
+@media (max-width: 768px){
+    .navbar{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1{
+        font-size: 2rem;
+    }
+}
