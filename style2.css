@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background: #f8f9fa;
+    color: #333;
+}
+/*Navbar*/
+
+header{
+    width: 100%;
+    background: #0d6efd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar{
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo img{
+    width: 90px;
+    height: 90px;
+    margin-right: 15px;
+}
+.logo h2{
+    color: #fff;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+.nav-links a:hover{
+    color: #ffd43b;
+}
+.notes-page{
+    padding: 100px 8%;
+    text-align: center;
+}
+
+.notes-page h1{
+    font-size: 40px;
+    color: #0d6efd;
+    margin-bottom: 15px;
+}
+
+.notes-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.note-card{
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.note-card:hover{
+    transform: translateY(-5px);
+}
+
+.note-card h3{
+    color: #0d6efd;
+    margin-bottom: 10px;
+}
+
+.note-card a{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #0d6efd;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.note-card a:hover{
+    background: #084298;
+}
